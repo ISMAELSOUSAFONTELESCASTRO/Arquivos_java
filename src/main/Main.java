@@ -1,7 +1,7 @@
-package Trabalho.main;
+package main;
 import java.io.*;
 
-import Trabalho.files.*;/*NÃO ESQUECER DE TIRAR O TRABALHO. */
+import files.*;
 import java.util.Scanner;
 
 public class Main {
