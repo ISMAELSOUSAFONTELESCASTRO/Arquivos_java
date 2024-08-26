@@ -12,6 +12,7 @@ public class Converter {
 			while((linha = br.readLine()) != null ) {
 				linhas.add(linha);
 			}
+			br.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -35,6 +36,7 @@ public class Converter {
 		try {
 			BufferedReader br = new BufferedReader(new FileReader(respostas));
 			Answers = br.readLine();
+			br.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
