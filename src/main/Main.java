@@ -22,7 +22,7 @@ public class Main {
             	int numAlunos = teclado.nextInt();
             	teclado.nextLine();
                 String sistema = System.getProperty("os.name");/*VERIFICA O SISTEMA OPERACIONAL UTILIZADO POR CAUSA DA UTILIZAÇÃO DIFERENTE DAS BARRAS PARA CAMINHO */
-                if(sistema == "Windows 10" || sistema == "Windows 11"){
+                if(sistema.contains("Windows")){
                     disciplina = new Arquivo(path + "\\" + nome);
                 }
                 else{

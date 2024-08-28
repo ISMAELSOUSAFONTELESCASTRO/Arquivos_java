@@ -1,17 +1,13 @@
 package files;
 import java.io.*;
-
 public class Arquivo {
-
     private String nome;
     private File disciplina;
     private FileWriter fw;
     private BufferedWriter bw;
-
     public Arquivo(String nome){
         this.nome = nome;
     }
-
     public void criarArquivo(){
         try {
             disciplina = new File(nome + ".txt");
@@ -27,16 +23,15 @@ public class Arquivo {
             System.out.println("Ocorreu um erro.");
         }
     }
-
     public void escrever(String nomeAluno, String respostasAluno){
         try { 
-            bw.write(respostasAluno+"\t"+nomeAluno);
+        	String arquivo = respostasAluno + "\t" + nomeAluno;
+            bw.write(arquivo.toUpperCase());
             bw.newLine();
         } catch(IOException e){
             System.out.println("Ocorreu um erro.");
         }
     }
-
     public void fecharEscritores(){
         try{
             bw.close();

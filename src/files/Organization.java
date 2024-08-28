@@ -159,7 +159,7 @@ public class Organization {
         File gabarito = new File(path, "gabarito" + nome + ".txt");
         try(BufferedWriter bw = new BufferedWriter(new FileWriter(gabarito))){
             System.out.print("Digite o gabarito dessa matéria: ");
-            String g = sc.next();
+            String g = sc.next().toUpperCase();
             bw.write(g);
         }
         catch(IOException e){

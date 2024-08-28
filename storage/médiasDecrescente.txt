@@ -1,0 +1,5 @@
+Sexo
+Média dessa matéria: NaN
+CU.txt
+7.0	ARNALDO
+Média dessa matéria: 7,00
